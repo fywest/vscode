@@ -6,17 +6,17 @@
     "configurations": [
         {
             "name": "(gdb) Launch",
-            "preLaunchTask": "build",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/Calculator",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/Calculator.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": true,
             "MIMode": "gdb",
-            "miDebuggerPath": "C:/Program Files (x86)/CodeBlocks/MinGW/gdb32/bin/gdb32.exe", // GDB的路径，注意替换成自己的路径
+            "miDebuggerPath": "C:/Program Files (x86)/Dev-Cpp/MinGW64/bin/gdb.exe",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
@@ -24,8 +24,6 @@
                     "ignoreFailures": true
                 }
             ]
-
         }
-
     ]
 }
